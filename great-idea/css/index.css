@@ -64,3 +64,222 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	width:90%;
+	margin:auto;
+	
+}
+
+
+/* ---Service CSS begins below this line---- */
+/* navigation bar for every html page */
+.nav_bar{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:row-wrap;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+.nav_bar a{
+	text-decoration: none;
+	color:darkgray;
+}
+.nav_bar a:hover{
+	color:black;
+}
+.nav_bar .current{
+	color: black;
+  }
+/* bg image */
+.header-img{
+	margin-top:20px;
+}
+.services-header-img{
+width:100%;
+}
+
+/* Services */
+.Services{
+ margin-top:20px;
+ border-bottom:solid 2px black;
+}
+
+.Services p{
+	margin-bottom:20px;
+}
+
+/* Column-container */
+
+.Column-container
+{
+	margin-top:20px;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.child{
+	flex: 20 0 40%; /* explanation below */
+	margin: 10px;
+	height: 115px;	
+	border:solid 2px black;
+	border-radius:10px;
+	padding: 20px; 
+    width: 200px;
+	height: 150px; 
+	background:lightgray; 
+
+}
+
+.child button:hover{
+	transform: skew(-20deg);
+	border-left:2px;
+	background:white;
+}
+
+
+/* bottom-content */
+.bottom-content{
+	border-top:solid 2px black;
+	display: flex;
+	flex-wrap: column-wrap;
+	padding-top:20px;
+
+}
+
+ul 
+{
+margin-top:20px;
+}
+
+li{
+	display:list-item;
+	list-style-type:disc;
+	list-style-position: inside;
+}
+
+/* ---Service HTML ends above this line--- */
+
+/* header-container */
+.header-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:column-wrap;
+	padding-top:20px;
+	margin-bottom:20px;
+}
+
+.header h1,button{
+	display: flex;
+	flex-wrap: wrap;
+}
+.header h1{
+	font-size:50pt;
+	padding-top:20px;
+}
+
+.header button{
+	width: 50%;
+	height: 10%;
+}
+.header button a{
+	text-decoration:none;
+	text-align:center;
+	padding-left:20px;
+	color:black;
+}
+
+.header button:hover{
+	background:lightslategray;
+	color:white;
+	transform: scale(1.2);
+	border-left:2px;
+	border-color:gray;
+
+}
+
+/* top-content */
+
+.top-content{
+	border-top:dotted 2px black;
+	display: flex;
+	flex-wrap:column-wrap;
+	padding-top:20px;
+}
+
+.features{
+	margin-right: 50px;
+}
+
+/* middle-img */
+.middle-img{
+	padding-top:10px;
+	width:100%;
+}
+/* bottom-content */
+.bottom-content3{
+display: flex;
+flex-wrap: column-wrap;
+border-bottom:dotted 2px black;
+}
+.child2{
+	padding-bottom:10px;
+}
+/* footer */
+footer{
+	margin-top:20px;
+	text-align: center;
+}
+
+/* media queries */
+@media(max-width:600px){
+	.header-container{
+		display: flex;
+		flex-direction:column;	
+} 
+.header-container{
+	display: flex;
+	flex-direction:column;	
+  } 
+    .introimg{
+		margin-top: 10px;
+		width:50%;
+	}
+
+	 .nav_bar{
+	  display:flex;
+	  flex-direction: column;
+	  align-items:flex-start
+	}
+	.Column-container
+	{
+		margin-top:20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.bottom-content3{
+		border-top:solid 2px black;
+		display: flex;
+		flex-direction: column;
+		padding-top:20px;
+	
+	}
+	.bottom-content3{
+		border-top:solid 2px black;
+		display: flex;
+		flex-direction: column;
+		padding-top:20px;
+	
+	}
+	.bottom-content{
+		border-top:solid 2px black;
+		display: flex;
+		flex-direction: column;
+		padding-top:20px;
+	
+	}
+
+}
